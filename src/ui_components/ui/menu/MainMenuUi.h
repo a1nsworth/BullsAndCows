@@ -8,8 +8,8 @@
 #include <iostream>
 #include <string>
 
-#include "../../interfaces/IRendered.h"
-#include "../../interfaces/IUpdatableEvents.h"
+#include "../../../interfaces/IRendered.h"
+#include "../../../interfaces/IUpdatableEvents.h"
 
 class MainMenuUi : public IRendered
 {

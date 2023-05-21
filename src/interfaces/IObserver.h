@@ -7,6 +7,7 @@
 
 class IObserver
 {
-
+ public:
+  virtual void Update() = 0;
 };
 #endif //BULLSANDCOWS_SRC_INTERFACES_IOBSERVER_H_

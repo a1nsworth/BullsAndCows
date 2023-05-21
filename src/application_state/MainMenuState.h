@@ -2,21 +2,25 @@
 // Created by Daniel on 21.05.2023.
 //
 
-#ifndef TANKS_SRC_APPLICATION_STATE_MAINMENUSTATE_H_
-#define TANKS_SRC_APPLICATION_STATE_MAINMENUSTATE_H_
+#ifndef BULLSANDCOWS_SRC_APPLICATION_STATE_MAINMENUSTATE_H_
+#define BULLSANDCOWS_SRC_APPLICATION_STATE_MAINMENUSTATE_H_
 
 #include "../interfaces/IApplicationState.h"
-#include "../ui/menu/MainMenuUi.h"
+#include "../ui_components/components/MainMenu.h"
 
-class MainMenuState : public IApplicationState
+class MainMenuState : public IApplicationState, public IObserver
 {
  private:
-  MainMenuUi *main_menu_ui_;
+  MainMenu *main_menu_ui_;
 
+  void Update() override
+  {
+
+  }
  public:
   MainMenuState()
   {
-	main_menu_ui_ = new MainMenuUi();
+//	main_menu_ui_ = new MainMenuUi();
   }
 
   ~MainMenuState() = default;
@@ -35,4 +39,4 @@ class MainMenuState : public IApplicationState
   }
 };
 
-#endif //TANKS_SRC_APPLICATION_STATE_MAINMENUSTATE_H_
+#endif //BULLSANDCOWS_SRC_APPLICATION_STATE_MAINMENUSTATE_H_
