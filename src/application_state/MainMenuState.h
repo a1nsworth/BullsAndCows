@@ -5,38 +5,25 @@
 #ifndef BULLSANDCOWS_SRC_APPLICATION_STATE_MAINMENUSTATE_H_
 #define BULLSANDCOWS_SRC_APPLICATION_STATE_MAINMENUSTATE_H_
 
-#include "../interfaces/IApplicationState.h"
 #include "../ui_components/components/MainMenu.h"
+#include "../application_state/GameState.h"
+#include "../application/Application.h"
 
 class MainMenuState : public IApplicationState, public IObserver
 {
  private:
-  MainMenu *main_menu_ui_;
+  Application *application_;
 
-  void Update() override
-  {
+  MainMenu *main_menu_;
 
-  }
+  void Invoke() override;
  public:
-  MainMenuState()
-  {
-//	main_menu_ui_ = new MainMenuUi();
-  }
-
+  explicit MainMenuState(Application *application);
   ~MainMenuState() = default;
 
-  void Update(Application *application) override
-  {
-
-  }
-  void Render(Application *application) override
-  {
-	main_menu_ui_->Render();
-  }
-  void UpdateEvents(Application *application) override
-  {
-
-  }
+  void Update() override;
+  void Render() override;
+  void UpdateEvents() override;
 };
 
 #endif //BULLSANDCOWS_SRC_APPLICATION_STATE_MAINMENUSTATE_H_

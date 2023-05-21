@@ -7,6 +7,8 @@
 
 #include "../interfaces/IApplicationState.h"
 
+#include "../application_state/MainMenuState.h"
+
 class Application
 {
  private:
@@ -14,7 +16,6 @@ class Application
 
   Application()
   {
-
   }
   ~Application() = default;
 
@@ -24,6 +25,8 @@ class Application
 
   [[nodiscard]] IApplicationState *GetState() const;
   void SetState(IApplicationState *state);
+
+  void Run();
 };
 
 #endif //BULLSANDCOWS_SRC_APPLICATION_APPLICATION_H_

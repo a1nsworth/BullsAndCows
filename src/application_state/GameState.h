@@ -2,12 +2,28 @@
 // Created by Daniel on 21.05.2023.
 //
 
-#ifndef TANKS_SRC_APPLICATION_STATE_GAMESTATE_H_
-#define TANKS_SRC_APPLICATION_STATE_GAMESTATE_H_
+#ifndef BULLSANDCOWS_SRC_APPLICATION_STATE_GAMESTATE_H_
+#define BULLSANDCOWS_SRC_APPLICATION_STATE_GAMESTATE_H_
 
-class GameState
+#include "../interfaces/IApplicationState.h"
+
+class GameState : public IApplicationState
 {
+ public:
+  GameState() = default;
 
+  void Render() override
+  {
+
+  }
+  void Update() override
+  {
+
+  }
+  void UpdateEvents() override
+  {
+
+  }
 };
 
-#endif //TANKS_SRC_APPLICATION_STATE_GAMESTATE_H_
+#endif //BULLSANDCOWS_SRC_APPLICATION_STATE_GAMESTATE_H_

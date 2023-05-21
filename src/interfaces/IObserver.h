@@ -8,6 +8,6 @@
 class IObserver
 {
  public:
-  virtual void Update() = 0;
+  virtual void Invoke() = 0;
 };
 #endif //BULLSANDCOWS_SRC_INTERFACES_IOBSERVER_H_

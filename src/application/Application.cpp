@@ -11,3 +11,11 @@ void Application::SetState(IApplicationState *state)
 {
   state_ = state;
 }
+void Application::Run() {
+  while (true)
+  {
+	state_->Render();
+	state_->UpdateEvents();
+	state_->Update();
+  }
+}

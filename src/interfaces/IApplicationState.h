@@ -2,17 +2,13 @@
 // Created by Daniel on 21.05.2023.
 //
 
-#ifndef TANKS_SRC_INTERFACES_IAPPLICATIONSTATE_H_
-#define TANKS_SRC_INTERFACES_IAPPLICATIONSTATE_H_
+#ifndef BULLSANDCOWS_SRC_INTERFACES_IAPPLICATIONSTATE_H_
+#define BULLSANDCOWS_SRC_INTERFACES_IAPPLICATIONSTATE_H_
 
-class Application;
+#include "IUpdatableEvents.h"
+#include "IRendered.h"
+#include "IUpdatable.h"
 
-class IApplicationState
-{
- public:
-  virtual void Update(Application *application) = 0;
-  virtual void Render(Application *application) = 0;
-  virtual void UpdateEvents(Application *application) = 0;
-};
+class IApplicationState : public IUpdatableEvents, public IRendered, public IUpdatable {};
 
-#endif //TANKS_SRC_INTERFACES_IAPPLICATIONSTATE_H_
+#endif //BULLSANDCOWS_SRC_INTERFACES_IAPPLICATIONSTATE_H_

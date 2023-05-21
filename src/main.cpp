@@ -1,7 +1,7 @@
-#include <iostream>
+#include "../src/application/Application.h"
 
 int main()
 {
-  std::cout << "Hello, World!" << std::endl;
+  Application()
   return 0;
 }

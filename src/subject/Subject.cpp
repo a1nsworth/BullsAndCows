@@ -15,5 +15,5 @@ void Subject::Remove(IObserver *observer)
 }
 void Subject::Notify()
 {
-  std::for_each(observers_.begin(), observers_.end(), [&](IObserver *observer) { observer->Update(); });
+  std::for_each(observers_.begin(), observers_.end(), [&](IObserver *observer) { observer->Invoke(); });
 }
