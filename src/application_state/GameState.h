@@ -1,0 +1,13 @@
+//
+// Created by Daniel on 21.05.2023.
+//
+
+#ifndef TANKS_SRC_APPLICATION_STATE_GAMESTATE_H_
+#define TANKS_SRC_APPLICATION_STATE_GAMESTATE_H_
+
+class GameState
+{
+
+};
+
+#endif //TANKS_SRC_APPLICATION_STATE_GAMESTATE_H_

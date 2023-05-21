@@ -1,0 +1,13 @@
+//
+// Created by Daniel on 21.05.2023.
+//
+
+#ifndef TANKS_SRC_INTERFACES_IAPPLICATIONSTATE_H_
+#define TANKS_SRC_INTERFACES_IAPPLICATIONSTATE_H_
+
+class IApplicationState
+{
+
+};
+
+#endif //TANKS_SRC_INTERFACES_IAPPLICATIONSTATE_H_
