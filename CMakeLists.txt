@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.24)
-project(Tanks)
+project(BullsAndCows)
 
 set(CMAKE_CXX_STANDARD 17)
 
